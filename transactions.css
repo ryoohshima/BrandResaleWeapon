@@ -1,0 +1,15 @@
+/* ----------- section28 ----------- */
+#sec28 {
+  padding-bottom: 5vh;
+}
+#sec28 table {
+  background-color: #999999;
+  width: 100%;
+}
+#sec28 th {
+  background-color: #eeeeee;
+}
+#sec28 td {
+  background-color: #ffffff;
+  padding: 1vw;
+}
