@@ -86,15 +86,6 @@ h4 {
   margin-bottom: 5vh;
   position: relative;
 }
-.exp_logo {
-  width: 7vw;
-  position: absolute;
-  top: 1vh;
-  left: 1vw;
-}
-.exp_logo img {
-  width: 100%;
-}
 .exp_wrap {
   display: flex;
   justify-content: center;
@@ -147,6 +138,9 @@ header {
 #header_banner_text1 p {
   font-size: 3vw;
 }
+#header_banner_text1 p:last-of-type {
+  margin-top: -1vh;
+}
 #header_banner_text1 span {
   color: #ffff00;
   font-size: 5vw;
@@ -161,7 +155,7 @@ header {
   background-color: #ffffff;
 }
 #header_banner_text2 p {
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 
 /* rectangle */
@@ -223,11 +217,10 @@ header {
   text-align: center;
 }
 #header_rectangle_maintext p {
-  font-size: 2.3vw;
+  font-size: 2vw;
 }
 #header_rectangle_maintext span {
-  font-size: 2.8vw;
-  color: #ff0000;
+  font-size: 3vw;
 }
 
 /* 吹き出し */
@@ -303,7 +296,7 @@ header {
   margin: 1vh 0;
 }
 #intro_inner p {
-  font-size: 2vw;
+  font-size: 3vw;
 }
 .intro_box {
   border: 3px solid #cc0000;
@@ -318,7 +311,7 @@ header {
   text-align: center;
 }
 #intro_text p {
-  font-size: 2vw;
+  font-size: 4vw;
 }
 
 /* ----------- section1 ----------- */
@@ -373,34 +366,82 @@ header {
 }
 
 /* ----------- section2 ----------- */
+#sec2 {
+  background-image: url(./img/sec2_1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 0;
+  min-height: 50vw;
+}
 .sec2_inner {
   display: flex;
   align-items: center;
-  margin-bottom: 3vh;
+  margin-bottom: 3vw;
 }
-.sec2_inner img {
-  width: 10%;
+.sec2_inner i {
+  margin-right: 0.5vw;
 }
 .sec2_inner p {
-  font-size: 2.3vw;
+  margin: 0;
+}
+.br {
+ margin-bottom: 3vw;
 }
 
 /* ----------- section3 ----------- */
-/* left black */
+#sec3 {
+  padding-top: 0;
+}
+#sec3 h2 {
+  margin-top: 0;
+}
 
 /* ----------- section4 ----------- */
 /* left black */
 
 /* ----------- section5 ----------- */
+
+#sec5 {
+  position: relative;
+}
 #sec5 p {
   color: #223377;
 }
-#sec5_img {
-  width: 40vw;
+#sec5_img_pc {
+  display: block;
+  position: absolute;
+  width: 20vw;
+  top: 47%;
+  right: 0;
 }
-#sec5_img img {
+#sec5_img_pc img {
   width: 100%;
 }
+#sec5_img_sp {
+  display: none;
+}
+#sec5_imgbox {
+  width: 100%;
+}
+#sec5_imgbox img {
+  width: 22%;
+}
+#sec5_imgbox img:nth-of-type(3) {
+  width: 24%;
+}
+#sec5_imgbox img:nth-of-type(4) {
+  width: 27.6%;
+}
+#sec5_illust {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 15%;
+}
+#sec5_illust img {
+  width: 100%;
+}
+
 
 /* ----------- section6 ----------- */
 #sec6_img {
@@ -741,6 +782,12 @@ dd p:first-child {
   margin-left: -5vw;
   width: 76vw;
   border: 2vw solid rgba(255, 255, 0, 0.7);
+  background-image: url(img/bags.png);
+  background-size: cover;
+}
+#sec27_wrap {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-top: 5vh;
 }
 #sec27_text {
   background-color: rgba(255, 255, 0, 0.7);
@@ -756,10 +803,7 @@ dd p:first-child {
   text-align: center;
 }
 #sec27_price {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -7vh;
+  text-align: center;
   position: relative;
   z-index: 1;
 }
@@ -857,7 +901,10 @@ dd p:first-child {
     background-repeat: no-repeat;
   }
   #header_banner_text1 p {
-    font-size: 8vw;
+    font-size: 5vw;
+  }
+  #header_banner_text1 p:last-of-type {
+    margin-top: -8vh;
   }
   #header_banner_text1 span {
     font-size: 10vw;
@@ -920,10 +967,10 @@ dd p:first-child {
     border-radius: 20px;
   }
   #header_rectangle_maintext p {
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
   #header_rectangle_maintext span {
-    font-size: 8vw;
+    font-size: 6vw;
   }
 
   /* 吹き出し */
@@ -932,9 +979,6 @@ dd p:first-child {
   }
 
   /* exp */
-  .exp_logo {
-    display: none;
-  }
   .exp_wrap {
     display: block;
   }
@@ -1002,11 +1046,35 @@ dd p:first-child {
   /* left black */
 
   /* ----------- section5 ----------- */
-  #sec5_img {
+  #sec5_img_sp {
+    display: block;
     width: 80vw;
+  }
+  #sec5_img_sp img {
+    width: 100%;
+  }
+  #sec5_img_pc {
+    display: none;
   }
   #sec5_text_wrap {
     width: 90vw;
+  }
+  #sec5_imgbox {
+    margin: 0 auto;
+    text-align: center;
+  }
+  #sec5_imgbox img {
+    width: 45%;
+  }
+  #sec5_imgbox img:nth-of-type(3) {
+    width: 44%;
+  }
+  #sec5_imgbox img:nth-of-type(4) {
+    width: 51%;
+  }
+  #sec5_illust {
+    width: 25%;
+    top: 15%;
   }
 
   /* ----------- section6 ----------- */
